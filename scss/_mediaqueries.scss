@@ -1,0 +1,33 @@
+@media screen and (max-width:768px){
+    .ios, .mac{
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    .track_content2{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .sub_track{
+            padding: 20px
+        }
+    }
+    .work_flow{
+        .work_flow_items{
+            flex-direction: column;
+            padding-top: 10%;
+            .items{
+                padding-bottom: 10%;
+            }
+        }
+    }
+    .company_logo{
+        flex-direction: column;
+        .company_img{
+            padding-bottom: 10%;
+        }
+    }
+    .footer_main{
+        flex-direction: column;
+    }
+}
+    

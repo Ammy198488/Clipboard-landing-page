@@ -1,0 +1,21 @@
+// general style for both button
+%btn{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 5px 5px 0px gray;
+    &:hover{
+        cursor: grabbing
+    }
+}
+.ios{
+    @extend %btn;
+    color: $white ;
+    background-color: $StrongCyan;
+}
+.mac{
+    @extend %btn;
+    color: $white ;
+    background-color: $Light-Blue;
+    margin-left: 10px;
+}

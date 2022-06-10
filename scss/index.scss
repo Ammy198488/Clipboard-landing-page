@@ -1,0 +1,154 @@
+@import 'color';
+@import 'button';
+@import 'mediaqueries';
+
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+p{
+    line-height: 1.5;
+    color: $Grayish-Blue;
+}
+h1, h2, h3{
+    color: $Dark-Grayish-Blue;
+}
+img{
+    max-width: 80%;
+}
+li{
+    list-style: none;
+    line-height: 2;
+}
+li:hover{
+    color: $StrongCyan;
+    cursor: grabbing;
+}
+// header
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10% 0px 8% 0px;
+    img{
+        width: 80px;
+    }
+    h1{
+        padding-top: 20px;
+    }
+    p{
+        padding: 20px 15%;
+    }
+}
+// track section
+.track{
+    padding: 5% 0px 5% 0px;
+    .track_content{
+        text-align: center;
+        p{
+            padding: 20px 25%;
+        }
+    }
+    // sub track
+    .track_content2{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .sub_track{
+            h3{
+            padding: 15px 0px;  
+            }
+        }
+    }
+}
+// access
+.access{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p{
+        padding: 20px 10% 0px;
+    }
+    img{
+        padding-top: 10%;
+    }
+}
+// work flow
+.work_flow{
+    text-align: center;
+    padding: 5% 0px;
+    h2{
+        padding: 10px 0px;
+    }
+   .work_flow_items{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       align-items: center; 
+       padding-top: 5%;
+    }
+    .items{
+        img{
+            width: 50px;
+            padding-bottom: 25px;
+        }
+        h3{
+            padding-bottom: 20px;
+        }
+    }
+}
+// company
+.company_logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10%;
+}
+// clip board
+.clip_board{
+    text-align: center;
+    padding: 5% 0px 10%;
+    p{
+        padding: 20px 0px;
+    }
+}
+// footer
+footer{
+    background-color: $footer;
+    color: $Dark-Grayish-Blue;
+    padding-top: 30px;
+    .footer_main{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    img{
+        width: 50px;
+    }
+    .social_links{
+        i{
+             margin-left: 20px;
+        }
+        &:hover{
+            color: $StrongCyan;
+            cursor: grabbing;
+        }
+    }
+}
